@@ -7,7 +7,7 @@
     <livewire:droplet-list>
     <div class="flex items-center justify-between">
         <h1 class="text-2xl text-blue-800 font-bold m-3">Your Netlify Sites</h1>
-        
+        <livewire:make-netlify-site/>
     </div>
     <livewire:netlify-list>
 @endsection
