@@ -23,8 +23,6 @@ class MakeVercelSite extends Component
                 "type"=>"github"
             ],
         ])->json();
-        dd($response);
-        
     }
 
 
