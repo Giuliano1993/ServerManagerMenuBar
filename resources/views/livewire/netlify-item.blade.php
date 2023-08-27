@@ -5,7 +5,7 @@
         <p class="text-blue-800">
             <span class="font-bold text-black">Provider:</span> 
             @if(isset($site['build_settings']['provider']))
-                <a href="{{$site['build_settings']['repo_url']}}">{{ $site['build_settings']['provider']}}</a>
+                <a target="_blank" href="{{$site['build_settings']['repo_url']}}">{{ $site['build_settings']['provider']}}</a>
             @endif
         </p>
     </div>
