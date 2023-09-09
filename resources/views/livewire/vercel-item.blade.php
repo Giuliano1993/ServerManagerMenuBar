@@ -10,7 +10,7 @@
         </h6>
         <p class="text-blue-800">
             <span class="font-bold text-black">Provider:</span> 
-            @if($site['link']['type'] == 'github')
+            @if(isset($site['link']) && $site['link']['type'] == 'github')
                 <a target="_blank" href="https://github.com/{{$site['link']['org']}}/{{$site['link']['repo']}}">{{ $site['link']['type']}}</a>
             @endif
         </p>

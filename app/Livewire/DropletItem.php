@@ -12,13 +12,19 @@ class DropletItem extends Component
 
     public $droplet;
 
+    public $error;
+
     public function mount($droplet)
     {
         $this->droplet = $droplet;
     }
 
     public function openTerminal(){
-        Process::run('start cmd.exe');
+        try{
+            Process::run('start cmd.exe ');
+        }catch(\Exception $e){
+            $this->error = $e->getMessage();
+        }
     }
 
     public function render()

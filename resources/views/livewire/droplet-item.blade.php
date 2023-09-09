@@ -4,4 +4,7 @@
         <span class="font-bold text-black">Ip:</span> 
         <span wire:click="openTerminal" class="ip cursor-pointer">{{$droplet['networks']['v4'][0]['ip_address']}}</span>
     </p>
+    @if($error)
+        <p class="text-red-300">{{ $error }}</p>
+    @endif
 </div>
